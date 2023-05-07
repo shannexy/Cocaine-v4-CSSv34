@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{912bf656-9d1a-4699-830e-b2added86f07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Direct3D9">
+      <UniqueIdentifier>{916704f4-345b-4d57-b765-7a38ea1df8a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Direct3D9\Color">
+      <UniqueIdentifier>{5d810c72-b49c-4ad9-a5d8-124c65d6401c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Debug">
+      <UniqueIdentifier>{a211dd89-6564-4c79-ac68-e881c9e009d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Crypt">
+      <UniqueIdentifier>{bbda27cc-69e8-4b79-aa0b-2ade884d5abb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Direct3D9\Font">
+      <UniqueIdentifier>{7e6653c9-e459-436e-bc0c-85a8d41207b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Memory">
+      <UniqueIdentifier>{78742918-b49e-40e4-a6ef-64d8626b8224}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Direct3D9\Renderer">
+      <UniqueIdentifier>{20c45e62-369c-4e2f-b47d-97c43667ff6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Valve">
+      <UniqueIdentifier>{fcd87dc7-f7fc-46da-b63e-50c08d393077}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Valve\Source">
+      <UniqueIdentifier>{c7ffa062-7532-4458-b78b-27f0837daaf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Valve\Core">
+      <UniqueIdentifier>{edbbe28f-5c40-4b28-af0a-1a028e132e38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{24d47028-1078-43ff-92ce-39e2b015d1c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Hooked">
+      <UniqueIdentifier>{73e67d0b-58b2-473b-82f7-820ec8e8090f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Shared">
+      <UniqueIdentifier>{e5e30d61-dde2-4a2b-b07f-da8485747000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Input">
+      <UniqueIdentifier>{122698d9-1236-434f-84c4-ce7c91eeaeb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGui">
+      <UniqueIdentifier>{b77a475a-67fa-4486-ac3a-71aaa8723773}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGui\Direct3D9">
+      <UniqueIdentifier>{3d6f3ddb-0794-4b1c-af01-4825e90ffa41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGui\STB">
+      <UniqueIdentifier>{a89c05d9-7488-4bd1-bb92-bf39dd087aaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{9c68322a-263f-4114-95af-bbf6127d8380}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Feature">
+      <UniqueIdentifier>{b833e038-e6ef-4f38-bee0-25d8cdcfab77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Feature\Menu">
+      <UniqueIdentifier>{516bc6f0-f49f-4b35-83c0-a42ae8f34be2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Valve\Source\Entity">
+      <UniqueIdentifier>{73dd96b4-7a2c-45ac-8bf5-2be4b38c7e9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Valve\Source\Player">
+      <UniqueIdentifier>{39f7a153-99e2-40a5-a063-689a8c4b0a2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Valve\Source\Weapon">
+      <UniqueIdentifier>{0ae0ae27-46d7-482d-ae82-6af95b672c55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\NetVarManager">
+      <UniqueIdentifier>{b837df40-dd29-4a0f-8221-b39e6c7ff96c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Feature\DataManager">
+      <UniqueIdentifier>{8820c165-ea73-4512-8fd5-d78586ddb6ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Feature\Accuracy">
+      <UniqueIdentifier>{3744f4e6-8c7b-4978-b51f-cfedd093e9c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Feature\Render">
+      <UniqueIdentifier>{258eedaf-b336-4e6b-ba5d-d2c4137689ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Feature\Aimbot">
+      <UniqueIdentifier>{e35eb388-0891-4286-8c5a-cc4349dca605}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Feature\Triggerbot">
+      <UniqueIdentifier>{7a17ad18-4c9e-4291-b791-b30ffd6ab3fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Feature\PlayerList">
+      <UniqueIdentifier>{5ac59640-61a5-4bdd-8126-dd5445c8da85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{96ca9436-0584-4651-a7a0-2212dd107fb4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Color.cpp">
+      <Filter>Framework\Direct3D9\Color</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug.cpp">
+      <Filter>Framework\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Font.cpp">
+      <Filter>Framework\Direct3D9\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory.cpp">
+      <Filter>Framework\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Framework\Direct3D9\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="checksum_md5.cpp">
+      <Filter>Valve\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Valve.cpp">
+      <Filter>Valve</Filter>
+    </ClCompile>
+    <ClCompile Include="Core.cpp">
+      <Filter>Valve\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2.cpp">
+      <Filter>Valve\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector3.cpp">
+      <Filter>Valve\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector4.cpp">
+      <Filter>Valve\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Hooked.cpp">
+      <Filter>Source\Hooked</Filter>
+    </ClCompile>
+    <ClCompile Include="Shared.cpp">
+      <Filter>Framework\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="VmtSwap.cpp">
+      <Filter>Framework\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Detour.cpp">
+      <Filter>Framework\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>Framework\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyTranslate.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGuiDraw.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGuiDX9.cpp">
+      <Filter>ImGui\Direct3D9</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Feature\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Config.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="NetVarManager.cpp">
+      <Filter>Source\NetVarManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Valve\Source\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapon.cpp">
+      <Filter>Valve\Source\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Valve\Source\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManager.cpp">
+      <Filter>Feature\DataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Accuracy.cpp">
+      <Filter>Feature\Accuracy</Filter>
+    </ClCompile>
+    <ClCompile Include="Render.cpp">
+      <Filter>Feature\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Aimbot.cpp">
+      <Filter>Feature\Aimbot</Filter>
+    </ClCompile>
+    <ClCompile Include="Triggerbot.cpp">
+      <Filter>Feature\Triggerbot</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerList.cpp">
+      <Filter>Feature\PlayerList</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Color.hpp">
+      <Filter>Framework\Direct3D9\Color</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug.hpp">
+      <Filter>Framework\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Direct3D9.hpp">
+      <Filter>Framework\Direct3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework.hpp">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Crypt.hpp">
+      <Filter>Framework\Crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="Font.hpp">
+      <Filter>Framework\Direct3D9\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.hpp">
+      <Filter>Framework\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.hpp">
+      <Filter>Framework\Direct3D9\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="checksum_md5.hpp">
+      <Filter>Valve\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="dt_common.hpp">
+      <Filter>Valve\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="dt_recv.hpp">
+      <Filter>Valve\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Valve.hpp">
+      <Filter>Valve</Filter>
+    </ClInclude>
+    <ClInclude Include="Core.hpp">
+      <Filter>Valve\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.hpp">
+      <Filter>Valve\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.hpp">
+      <Filter>Valve\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector4.hpp">
+      <Filter>Valve\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source.hpp">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooked.hpp">
+      <Filter>Source\Hooked</Filter>
+    </ClInclude>
+    <ClInclude Include="Shared.hpp">
+      <Filter>Framework\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="ScopedMemProtect.hpp">
+      <Filter>Framework\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="VmtSwap.hpp">
+      <Filter>Framework\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Detour.hpp">
+      <Filter>Framework\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.hpp">
+      <Filter>Framework\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyTranslate.hpp">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_rect_pack.hpp">
+      <Filter>ImGui\STB</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_textedit.hpp">
+      <Filter>ImGui\STB</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_truetype.hpp">
+      <Filter>ImGui\STB</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui.hpp">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGuiInternal.hpp">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGuiDX9.hpp">
+      <Filter>ImGui\Direct3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.hpp">
+      <Filter>Feature\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.hpp">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Feature.hpp">
+      <Filter>Feature</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVarManager.hpp">
+      <Filter>Source\NetVarManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.hpp">
+      <Filter>Valve\Source\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapon.hpp">
+      <Filter>Valve\Source\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.hpp">
+      <Filter>Valve\Source\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManager.hpp">
+      <Filter>Feature\DataManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Accuracy.hpp">
+      <Filter>Feature\Accuracy</Filter>
+    </ClInclude>
+    <ClInclude Include="Render.hpp">
+      <Filter>Feature\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Aimbot.hpp">
+      <Filter>Feature\Aimbot</Filter>
+    </ClInclude>
+    <ClInclude Include="Triggerbot.hpp">
+      <Filter>Feature\Triggerbot</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerList.hpp">
+      <Filter>Feature\PlayerList</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

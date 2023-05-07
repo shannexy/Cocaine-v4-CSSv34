@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{88AEB23A-33A7-40C2-ACFB-CC02763CEB2D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>CounterStrikeSourcev34</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>cheatModuleD</TargetName>
+    <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>cheatModule</TargetName>
+    <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32_LEAN_AND_MEAN;WIN32;_DEBUG;_WINDOWS;_USRDLL;COUNTERSTRIKESOURCEV34_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <AdditionalDependencies>d3d9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32_LEAN_AND_MEAN;WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>d3d9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Accuracy.cpp" />
+    <ClCompile Include="Aimbot.cpp" />
+    <ClCompile Include="checksum_md5.cpp" />
+    <ClCompile Include="Color.cpp" />
+    <ClCompile Include="Config.cpp" />
+    <ClCompile Include="Core.cpp" />
+    <ClCompile Include="DataManager.cpp" />
+    <ClCompile Include="Debug.cpp" />
+    <ClCompile Include="Detour.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Font.cpp" />
+    <ClCompile Include="Hooked.cpp" />
+    <ClCompile Include="ImGui.cpp" />
+    <ClCompile Include="ImGuiDraw.cpp" />
+    <ClCompile Include="ImGuiDX9.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="KeyTranslate.cpp" />
+    <ClCompile Include="Memory.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="NetVarManager.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayerList.cpp" />
+    <ClCompile Include="Render.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="Shared.cpp" />
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Triggerbot.cpp" />
+    <ClCompile Include="Valve.cpp" />
+    <ClCompile Include="Vector2.cpp" />
+    <ClCompile Include="Vector3.cpp" />
+    <ClCompile Include="Vector4.cpp" />
+    <ClCompile Include="VmtSwap.cpp" />
+    <ClCompile Include="Weapon.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Accuracy.hpp" />
+    <ClInclude Include="Aimbot.hpp" />
+    <ClInclude Include="checksum_md5.hpp" />
+    <ClInclude Include="Color.hpp" />
+    <ClInclude Include="Config.hpp" />
+    <ClInclude Include="Core.hpp" />
+    <ClInclude Include="Crypt.hpp" />
+    <ClInclude Include="DataManager.hpp" />
+    <ClInclude Include="Debug.hpp" />
+    <ClInclude Include="Detour.hpp" />
+    <ClInclude Include="Direct3D9.hpp" />
+    <ClInclude Include="dt_common.hpp" />
+    <ClInclude Include="dt_recv.hpp" />
+    <ClInclude Include="Entity.hpp" />
+    <ClInclude Include="Feature.hpp" />
+    <ClInclude Include="Font.hpp" />
+    <ClInclude Include="Framework.hpp" />
+    <ClInclude Include="Hooked.hpp" />
+    <ClInclude Include="ImGui.hpp" />
+    <ClInclude Include="ImGuiDX9.hpp" />
+    <ClInclude Include="ImGuiInternal.hpp" />
+    <ClInclude Include="Input.hpp" />
+    <ClInclude Include="KeyTranslate.hpp" />
+    <ClInclude Include="Memory.hpp" />
+    <ClInclude Include="Menu.hpp" />
+    <ClInclude Include="NetVarManager.hpp" />
+    <ClInclude Include="Player.hpp" />
+    <ClInclude Include="PlayerList.hpp" />
+    <ClInclude Include="Render.hpp" />
+    <ClInclude Include="Renderer.hpp" />
+    <ClInclude Include="ScopedMemProtect.hpp" />
+    <ClInclude Include="Shared.hpp" />
+    <ClInclude Include="Source.hpp" />
+    <ClInclude Include="stb_rect_pack.hpp" />
+    <ClInclude Include="stb_textedit.hpp" />
+    <ClInclude Include="stb_truetype.hpp" />
+    <ClInclude Include="Triggerbot.hpp" />
+    <ClInclude Include="Valve.hpp" />
+    <ClInclude Include="Vector2.hpp" />
+    <ClInclude Include="Vector3.hpp" />
+    <ClInclude Include="Vector4.hpp" />
+    <ClInclude Include="VmtSwap.hpp" />
+    <ClInclude Include="Weapon.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
